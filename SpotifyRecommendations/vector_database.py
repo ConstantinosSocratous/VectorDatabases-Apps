@@ -26,3 +26,6 @@ class VectorDb:
         )
             
         return query_response
+    
+    def list_collections(self):
+        return pinecone.list_collections()

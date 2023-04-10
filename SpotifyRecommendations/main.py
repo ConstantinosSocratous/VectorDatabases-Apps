@@ -61,6 +61,8 @@ def get_vectors(audio_features):
 
     return vectors
 
+##################################
+
 track_ids = get_saved_tracks_ids()
 features = get_audio_features_ids(track_ids)
 vectors = get_vectors(features)
@@ -79,6 +81,4 @@ for match in results['matches']:
     name = sp.track(match['id'])['name']
     print(name)
 
-# spotify = sp.recommendations(seed_tracks=[random_track['id']], limit=10) 
-# print('----------')
-# print(spotify['tracks'][0]['name'])
+##################################
